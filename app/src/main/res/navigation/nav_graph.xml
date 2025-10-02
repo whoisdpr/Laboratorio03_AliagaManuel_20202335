@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/locationFragment">
+
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.iot_lab4_20202335.ui.LocationFragment"
+        android:label="@string/title_locations" >
+        <action
+            android:id="@+id/action_location_to_forecast"
+            app:destination="@id/forecastFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.example.iot_lab4_20202335.ui.ForecastFragment"
+        android:label="@string/title_forecast">
+        <argument
+            android:name="locationId"
+            app:argType="integer" />
+        <argument
+            android:name="locationName"
+            app:argType="string" />
+        <argument
+            android:name="days"
+            app:argType="integer"
+            android:defaultValue="7" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sportsFragment"
+        android:name="com.example.iot_lab4_20202335.ui.SportsFragment"
+        android:label="@string/title_sports" />
+</navigation>

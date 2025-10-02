@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/inLocationId"
+            android:hint="idLocation"
+            android:inputType="number"
+            android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/inDays"
+            android:hint="#días Forecast"
+            android:inputType="number"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:ems="4" android:layout_marginStart="8dp"/>
+        <Button
+            android:id="@+id/btnSearchForecast"
+            android:text="@string/action_search"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressForecast"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:layout_width="match_parent" android:layout_height="4dp"
+        android:layout_marginTop="8dp" android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerForecast"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:paddingTop="8dp"/>
+</LinearLayout>

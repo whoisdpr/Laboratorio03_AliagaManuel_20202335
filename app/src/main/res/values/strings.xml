@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IOT LAB4 20202335</string>
+
+    <string name="app_title_big">Tele-Weather</string>
+
+    <string name="author_credit">Elaborado por: Manuel Aliaga / 20202335</string>
+
+    <string name="title_locations">Locations</string>
+    <string name="title_forecast">Forecast</string>
+    <string name="title_sports">Sports</string>
+
+    <string name="action_search">Buscar</string>
+    <string name="hint_search">Buscar por Ciudad/Distrito</string>
+    <string name="empty_search">Ingresa una búsqueda</string>
+    <string name="no_data">No hay datos</string>
+    <string name="syncing">Sincronizando…</string>
+
+    <string name="action_open_app">Ingresar</string>
+    <string name="welcome_text">Bienvenido. Pulsa el botón para abrir la app.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
